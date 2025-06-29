@@ -15,20 +15,25 @@ import decorator.Coffee;
 import decorator.MilkCoffee;
 import decorator.PlainCoffee;
 import decorator.SugarCoffee;
+import facade.facade;
 import memento.Caretaker;
 import memento.Memento;
 import memento.Originator;
 import stratergy.Context;
 import stratergy.PaymentStratergy;
 import stratergy.UPIPayment;
-
-
+import facade.DVDPlayer;
+import facade.Projector;
+import facade.SoundSystem;
 
 public class Main {
     public static void main(String[] args) {
+//        facade
+//        facade ob= new facade(new DVDPlayer(),new Projector(),new SoundSystem());
+//        ob.watchMovie();
         // Adaptor
-        adaptorinterface ob = new adaptorinterfaceimpl(new BabyWeight());
-        System.out.println(ob.getWeightInKg());
+//        adaptorinterface ob = new adaptorinterfaceimpl(new BabyWeight());
+//        System.out.println(ob.getWeightInKg());
 
         //memento
 //        Caretaker ct = new Caretaker();
